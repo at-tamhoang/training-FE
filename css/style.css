@@ -1,8 +1,349 @@
-.header-nav{
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*clear fix all*/   
+ .clr::after {
+    display:block;
+    content:"";
+    clear:both;
+}
+/*header style*/
+.header-logo, .nav-sns-container{
+    margin-left: 50px;   
+}
+
+
+.header-left{
+    float:left;
+}
+.header-right {
+    float: right;
+    line-height: 92px;
+    margin-right: 50px;
+}
+/*can giua img va text*/
+.header-right img, p {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-right img {
+    width: 32px;
+    height: 32px;
+}
+.phone-number{
+    color:#62c6f8;
+    font-weight: bold;
+}
+.phone-intro{
+    font-style: italic;
+}
+.header-logo {
+    display: inline-block;
+    width: 100%;
+}
+
+.nav-sns-container{
+    display: inline-block;
+    width: 100%;   
+}
+ 
+
+
+.header-menu{
+    float:left;
+    width: 70%;
+    margin-bottom: -3px;
+}
+.header-SNS{
+    float: right;
+    width:8%;
+}
+
+
+.header-menu a{
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;  /*hung cho*/
+    text-decoration: none;  
+    border: 1px solid #e9e9e9;
   }
+  .header-menu li{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+           
+  }      
+ 
+ .header-SNS li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline-block;
+    }
+
+
+
+  .header-banner{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .header-banner img{
+      width:110%;
+}
+  
+
+
+  /*chia cot sidebar*/
+  .sidebar{
+  float: left;
+  width:calc (25% - 50px);
+  margin-left: 50px;
+  margin-top: 75px;
+  }
+
+  .main-content{
+    float: right;
+    width: 70%;
+    margin-top: 75px;  
+  }
+
+
+
+    /*style main contain*/
+.service-list {
+    margin: -10px;
+  }
+.serv-item {
+    width: calc(100% / 3);
+    height: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+.serv-inner {
+    border: 1px solid #000;
+    position: relative;
+    }
+.serv-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background:#62c6f8;
+    color: #fff;
+    text-align: center;
+    }
+
+.serv-item img{
+    width: 100%;
+    height: 45%;
+    box-sizing: border-box;
+}
+
+.serv-item h4{
+    padding:15px;
+    font-weight: bold;
+   }
+   
+.serv-item p{
+    padding: 0px 15px 40px 15px;
+}
+
+
+
+   /*sidebar style*/
+.sidebar-item-title{
+    background-color: #d9e4e9;
+    padding:15px;
+    
+}
+.booking-form .sidebar-item-title{
+    font-weight: bold;
+}
+.pain-type{
+    color:#000;
+    text-decoration-line: none;
+}
+.pain-list li{
+    list-style-type: disc;
+    margin-left: 20px;
+    padding:5px;
+}
+
+.section-has-border::after{
+  content: "";
+  width: 70px;
+  border-top: 1px solid blue;
+  display: block;
+  margin-top: 20px;
+}
+
+
+.booking-form, .list-content-adult, .list-content-children{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.booking-form{
+    background-color: #d9e4e9;
+}
+
+input{
+    width:256px;
+    height:31px;
+    margin:10px;
+   
+}
+
+.send-button{
+  background-color: #4bbc56;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  width:100px;
+  margin: 0 30% 0 30%;
+}
+
+
+
+
+
+    /*footer*/
+.footer-top{
+    column-count: 3;
+    height:202px;
+    display: block;
+}
+
+.sns-list img,title{
+    vertical-align: middle;
+}
+.company-info-list li, .support-info-list li{
+    padding: 5px;
+    list-style-type: disc;
+    margin-left: 25px;
+}
+.sns-info-list li{
+    padding:5px;
+}
+.footer-small-title{
+    padding:12px;
+}
+
+.company-info, .support-info, .sns-info{
+    height:130px;
+    padding-top: 32px;
+    box-sizing: content-box;
+    
+}
+.company-link, .support-link{
+    color:white;
+    text-decoration-line: none;
+}
+.page-footer{
+    height: 258px;
+    background-color: #62c6f8;
+    color: white;
+    margin-top:30px;
+    padding-left:50px;
+    margin-right: -160px; 
+
+}
+.copy-right{
+    text-align: left;
+}
+.section-last-border::before{
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #d9e4e9;
+    display: block;
+    margin-bottom: 25px;
+    margin-left:-50px;
+}
+
+
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+.service-list .serv-item {
+      width: 50%;
+    }
+}
+  
+  @media screen and (max-width: 767px) {
+.service-list .serv-item {
+      width: 100%;
+    }
+}
+  
+  @media screen and (max-width: 479px) {
+    .service-list .serv-item {
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 399px) {
+    .service-list .serv-item {
+        width: 100%;
+    }
+}
+  
+
